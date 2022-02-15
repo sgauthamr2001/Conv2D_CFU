@@ -28,6 +28,7 @@
 #include "models/mlcommons_tiny_v01/vww/vww.h"
 #include "models/mnv2/mnv2.h"
 #include "models/pdti8/pdti8.h"
+#include "models/mnist_nn/mnist_nn.h"
 
 inline void no_menu() {}
 
@@ -70,6 +71,9 @@ static struct Menu MENU = {
 #if defined(INLCUDE_MODEL_MLCOMMONS_TINY_V01_VWW)
         MENU_ITEM(AUTO_INC_CHAR, "MLCommons Tiny V0.1 Visual Wake Words",
                   mlcommons_tiny_v01_vww_menu),
+#endif
+#if defined(INLCUDE_MODEL_MNIST_NN) || defined(INCLUDE_ALL_TFLM_EXAMPLES)
+        MENU_ITEM(AUTO_INC_CHAR, "mnist_nn model", mnist_nn_menu),
 #endif
 #if AUTO_INC_CHAR == STARTING_SEL_CHAR
         MENU_ITEM('!', "No models selected! Check defines in Makefile!",

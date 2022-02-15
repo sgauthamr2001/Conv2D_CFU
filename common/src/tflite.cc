@@ -103,6 +103,9 @@ constexpr int kTensorArenaSize = const_max<int>(
 #ifdef INLCUDE_MODEL_MLCOMMONS_TINY_V01_VWW
     99 * 1024,
 #endif
+#ifdef INLCUDE_MODEL_MNIST_NN
+    256 * 1024,
+#endif
     0 /* When no models defined, we don't need a tensor arena. */
 );
 
