@@ -76,6 +76,11 @@ SOC_GATEWARE_DIR := $(SOC_BUILD_DIR)/gateware
 export DEFINES    += PLATFORM_$(PLATFORM)
 export DEFINES    += PLATFORM=$(PLATFORM)
 
+# We can specify NOT compiling the TFLite-micro library
+ifdef SKIP_TFLM
+export DEFINES    += SKIP_TFLM
+endif
+
 SHELL           := /bin/bash
 CRC             := 
 #CRC             := --no-crc
@@ -136,6 +141,7 @@ TFLM_COPY_SRC_DIRS := \
 	tensorflow/lite/micro \
 	tensorflow/lite/micro/kernels \
 	tensorflow/lite/micro/memory_planner \
+	tensorflow/lite/micro/arena_allocator \
 	tensorflow/lite/schema
 
 TFLM_FIND_PARAMS := \
@@ -184,7 +190,7 @@ else ifeq '$(ENABLE_TRACE_ARG)' '--trace-fst'
 	VERILATOR_TRACE_PATH := $(BUILD_DIR)/simx.fst
 endif
 
-BUILD_JOBS ?= 1
+BUILD_JOBS ?= $(shell nproc)
 
 .PHONY:	renode
 renode: renode-scripts
@@ -247,12 +253,12 @@ $(BUILD_DIR)/src:
 
 .PHONY: tflite-micro-src
 tflite-micro-src: $(BUILD_DIR)/src
+ifndef SKIP_TFLM
 	@echo "Copying tflite-micro files"
 	for d in $(TFLM_COPY_SRC_DIRS); do \
 		mkdir -p $(BUILD_DIR)/src/$$d; \
 		$(COPY) `find $(TFLM_SRC_DIR)/$$d $(TFLM_FIND_PARAMS)` $(BUILD_DIR)/src/$$d; \
 	done
-	$(RM) $(BUILD_DIR)/src/tensorflow/lite/c/common.cc
 	$(COPY) $(TFLM_SRC_DIR)/tensorflow/lite/micro/kernels/conv_test* $(BUILD_DIR)/src/tensorflow/lite/micro/kernels
 	$(COPY) $(TFLM_SRC_DIR)/tensorflow/lite/micro/kernels/depthwise_conv_test* $(BUILD_DIR)/src/tensorflow/lite/micro/kernels
 	@for d in $(TFLM_COPY_DATA_DIRS); do \
@@ -270,6 +276,8 @@ tflite-micro-src: $(BUILD_DIR)/src
 	$(COPY) $(TFLM_TP_DIR)/flatbuffers/include/* $(BUILD_DIR)/src/third_party/flatbuffers/include
 	mkdir -p $(BUILD_DIR)/src/third_party/ruy/ruy/profiler
 	$(COPY) $(TFLM_TP_DIR)/ruy/ruy/profiler/instrumentation.h $(BUILD_DIR)/src/third_party/ruy/ruy/profiler
+endif
+
 
 .PHONY: build-dir
 build-dir: $(BUILD_DIR)/src tflite-micro-src $(BUILD_DIR_EXTRA_DEP) 
@@ -279,6 +287,11 @@ build-dir: $(BUILD_DIR)/src tflite-micro-src $(BUILD_DIR_EXTRA_DEP)
 	$(COPY) $(SAXON_SRC_DIR)/riscv.h     $(BUILD_DIR)/src
 	$(COPY) $(SRC_DIR)/*                 $(BUILD_DIR)/src
 	$(RM)			             $(BUILD_DIR)/_*
+ifdef SKIP_TFLM
+	$(RM)                                $(BUILD_DIR)/src/tensorflow
+	$(RM)                                $(BUILD_DIR)/src/tiny
+	$(RM)                                $(BUILD_DIR)/src/models
+endif
 # Overlay platform / target specific changes.
 ifneq ($(wildcard $(COMMON_DIR)/_$(PLATFORM)/$(TARGET)/*),)
 	$(COPY) $(COMMON_DIR)/_$(PLATFORM)/$(TARGET)/* $(BUILD_DIR)

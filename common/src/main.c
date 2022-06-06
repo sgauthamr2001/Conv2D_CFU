@@ -26,12 +26,14 @@
 #include "functional_cfu_tests.h"
 #include "instruction_handler.h"
 #include "menu.h"
-#include "models/models.h"
 #include "perf.h"
 #include "playground_util/util_tests.h"
 #include "proj_menu.h"
 #include "spiflash.h"
 #include "tflite_unit_tests.h"
+#ifndef SKIP_TFLM
+#include "models/models.h"
+#endif
 
 #ifdef PLATFORM_sim
 static void trace_sim() {
@@ -48,18 +50,23 @@ static struct Menu MENU = {
     "CFU Playground",
     "main",
     {
+#ifndef SKIP_TFLM
         MENU_ITEM('1', "TfLM Models menu", models_menu),
+#endif
         MENU_ITEM('2', "Functional CFU Tests", do_functional_cfu_tests),
         MENU_ITEM('3', "Project menu", do_proj_menu),
         MENU_ITEM('4', "Performance Counter Tests", perf_test_menu),
+#ifndef SKIP_TFLM
         MENU_ITEM('5', "TFLite Unit Tests", tflite_do_tests),
+#endif
         MENU_ITEM('6', "Benchmarks", do_benchmarks_menu),
         MENU_ITEM('7', "Util Tests", do_util_tests_menu),
 #ifdef SPIFLASH_BASE
         MENU_ITEM('8', "SPI Flash Debugging", spiflash_menu),
 #endif
 #ifdef CONFIG_CPU_DIV_UNIMPLEMENTED
-        MENU_ITEM('I', "Illegal Instruction Tests", do_instruction_tests),
+        MENU_ITEM('I', "Illegal Instruction Tests (these *WILL* hang on Fomu!)",
+                  do_instruction_tests),
 #endif
 #ifdef CSR_VIDEO_FRAMEBUFFER_BASE
         MENU_ITEM('9', "Framebuffer Debugging", framebuffer_menu),
