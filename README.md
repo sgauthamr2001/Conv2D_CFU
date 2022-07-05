@@ -12,12 +12,8 @@ several aspects of parallelism in the case of a Convolution which are to be coup
 frameworks to accelerate the convolution operation, but most of them end up being designed in isolation, or tend to accelerate the whole network on hardware
 where the CPU core merely places the roll initial data-transfer. The CFU playground enables the development of accelerator in an integrated SoC environment solving
 the storage and network bottlenecks that might arise when designed in isolation, while at the same time significant operations are performed on the VexRiscV core. 
-The accelerator called the CFU (Custom FUnction Units) are invoked from the TFlite kernels using macros, and since a given Kernel could be re-used for 
+The accelerator called the CFU (Custom Function Units) are invoked from the TFlite kernels using macros, and since a given Kernel could be re-used for 
 multiple Networks, this offers more flexibility in terms of hardware. </p>
-
-<p align = "justify"> Post this the hardware accelerator was developed on the inferences drawn and same was optimised 
-iteratively including aspects like changing the cache structure, degree of data re-use, amount of parallelism, till significant peformance was obtained. The accelerator was placed and 
-rounted on a Nexys4 Artix-7 FPGA, and was succesfully tested. </p>
 
 #### Getting Started and Software Baseline
 
