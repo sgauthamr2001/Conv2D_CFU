@@ -36,7 +36,7 @@ VexRiscv_MinCfu.v: $(SRC)
 	sbt compile "runMain vexriscv.GenCoreDefault --iCacheSize 0 --dCacheSize 0 --csrPluginConfig mcycle --cfu true --mulDiv false --singleCycleShift false --singleCycleMulDiv false --bypass false --prediction none --outputFile VexRiscv_MinCfu"
 
 VexRiscv_PerfCfu.v: $(SRC) Makefile
-	sbt compile "runMain vexriscv.GenCoreDefault --dCacheSize 8192 --iCacheSize 8192 --csrPluginConfig all --cfu true --perfCSRs 8 --outputFile VexRiscv_PerfCfu"
+	sbt compile "runMain vexriscv.GenCoreDefault --dCacheSize 8192 --iCacheSize 4096 --csrPluginConfig all --cfu true --perfCSRs 8 --outputFile VexRiscv_PerfCfu"
 
 VexRiscv_PerfCfuDebug.v: $(SRC) Makefile
 	sbt compile "runMain vexriscv.GenCoreDefault --dCacheSize 8192 --iCacheSize 8192 --csrPluginConfig all -d --cfu true --perfCSRs 8 --outputFile VexRiscv_PerfCfuDebug"

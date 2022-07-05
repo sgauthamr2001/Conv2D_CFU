@@ -1,0 +1,180 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdated file /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/project/build.properties: set sbt.version to 1.6.2[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.6.2 (Private Build Java 1.8.0_312)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 1017.45643ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 56.287243ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.267117ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 13.800101 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(vexriscv-build) took 40.766315ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id vexriscv-build, base: /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/project, plugins: List(<none>))) took 76.830898ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/project, returning: (vexriscv-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 91.473962ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 0.224956ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/project/, ...) took 152.395107ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 351.481831ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 5.271119ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 63.452188ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 8.832413ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 622.100002ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 110.690074ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 1.174662ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 4456.097041ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.002903ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 6.512501ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.55023 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 5.052929ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv, dependencies: List(ClasspathDependency(RootProject(../../third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv),None)), plugins: List(<none>))) took 7.506959ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 2315.164328ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 3.014794ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/, ...) took 6775.581256ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 10.893986ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.003974ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 0.339085ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.260567 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project vexriscv-build from plugins.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(vexriscv-build) took 1.272742ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id vexriscv-build, base: /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/project, plugins: List(<none>))) took 2.955453ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/project, returning: (vexriscv-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 281.117456ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 0.395089ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/project/, ...) took 292.915847ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 293.769929ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 0.089149ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 9.646026ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 0.447853ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 70.188481ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 22.783414ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 0.002659ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 2227.072044ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.008953ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 0.385161ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbtassembly.AssemblyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtassembly.AssemblyPlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbtassembly.AssemblyPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.268263 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 27.059284ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv, plugins: List(<none>))) took 29.630256ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 734.72211ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 0.497747ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/, ...) took 2963.256484ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 9765.956203ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.317751ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 12.88434ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 0.502481ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 98.877838ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 32.633202ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.002466ms[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to VexRiscvOnWishbone (in build file:/home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mExecuting in batch mode. For better performance use sbt's shell[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 88 Scala sources to /home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/target/scala-2.11/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/main/scala/vexriscv/VexRiscv.scala:35:17: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: None[0m
+[0m[[0m[33mwarn[0m] [0m[0m    plugins.find(_.getClass == clazz) match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/main/scala/vexriscv/demo/smp/VexRiscvSmpLitexMpCluster.scala:1:1: [0m
+[0m[[0m[0minfo[0m] [0m[0mFound names but no class, trait or object is defined in the compilation unit.[0m
+[0m[[0m[0minfo[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
+[0m[[0m[0minfo[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
+[0m[[0m[0minfo[0m] [0m[0m    [0m
+[0m[[0m[0minfo[0m] [0m[0mpackage vexriscv.demo.smp[0m
+[0m[[0m[0minfo[0m] [0m[0m^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/gautham/Desktop/Conv2D_CFU/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/main/scala/vexriscv/demo/smp/VexRiscvSmpLitexMpCluster.scala:1:1: [0m
+[0m[[0m[0minfo[0m] [0m[0mFound top level imports but no class, trait or object is defined in the compilation unit.[0m
+[0m[[0m[0minfo[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
+[0m[[0m[0minfo[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
+[0m[[0m[0minfo[0m] [0m[0m    [0m
+[0m[[0m[0minfo[0m] [0m[0mpackage vexriscv.demo.smp[0m
+[0m[[0m[0minfo[0m] [0m[0m^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 38 deprecation warnings; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were two feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/gautham/Desktop/Conv2D_CFU/soc/vexriscv/target/scala-2.11/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 43 s, completed 5 Jul, 2022 9:18:52 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(runMain vexriscv.GenCoreDefault --dCacheSize 8192 --iCacheSize 8192 --csrPluginConfig all --cfu false --perfCSRs 8 --outputFile VexRiscv_PerfCfu, None, None)[0m
