@@ -1,0 +1,51 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Wed Jul  6 00:55:30 2022
+| Host         : gautham-Inspiron-5570 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_utilization -hierarchical -file digilent_nexys4ddr_utilization_hierarchical_place.rpt
+| Design       : digilent_nexys4ddr
+| Device       : 7a100tcsg324-1
+| Design State : Fully Placed
+--------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------+------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|          Instance          |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------+------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| digilent_nexys4ddr         |            (top) |      21359 |      21213 |     144 |    2 | 10970 |     11 |     25 |          4 |
+|   (digilent_nexys4ddr)     |            (top) |       2482 |       2336 |     144 |    2 |  1956 |     10 |     17 |          0 |
+|   Cfu                      |              Cfu |      15090 |      15090 |       0 |    0 |  7270 |      0 |      0 |          0 |
+|     (Cfu)                  |              Cfu |        151 |        151 |       0 |    0 |  2262 |      0 |      0 |          0 |
+|     m00                    |              mac |        477 |        477 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m01                    |            mac_0 |        477 |        477 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m02                    |            mac_1 |        477 |        477 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m03                    |            mac_2 |       3682 |       3682 |       0 |    0 |   371 |      0 |      0 |          0 |
+|     m04                    |            mac_3 |       1089 |       1089 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m05                    |            mac_4 |       1169 |       1169 |       0 |    0 |   339 |      0 |      0 |          0 |
+|     m06                    |            mac_5 |        833 |        833 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m07                    |            mac_6 |       1122 |       1122 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m08                    |            mac_7 |        833 |        833 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m09                    |            mac_8 |        577 |        577 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m10                    |            mac_9 |        989 |        989 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m11                    |           mac_10 |       1021 |       1021 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m12                    |           mac_11 |        578 |        578 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m13                    |           mac_12 |        989 |        989 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m14                    |           mac_13 |        577 |        577 |       0 |    0 |   307 |      0 |      0 |          0 |
+|     m15                    |           mac_14 |        609 |        609 |       0 |    0 |   307 |      0 |      0 |          0 |
+|   VexRiscv                 |         VexRiscv |       3850 |       3850 |       0 |    0 |  1744 |      1 |      8 |          4 |
+|     (VexRiscv)             |         VexRiscv |       2300 |       2300 |       0 |    0 |  1582 |      0 |      2 |          4 |
+|     IBusCachedPlugin_cache | InstructionCache |        724 |        724 |       0 |    0 |    96 |      1 |      1 |          0 |
+|     dataCache_1            |        DataCache |        837 |        837 |       0 |    0 |    66 |      0 |      5 |          0 |
++----------------------------+------------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
