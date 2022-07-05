@@ -17,15 +17,23 @@ multiple Networks, this offers more flexibility in terms of hardware. </p>
 
 #### Getting Started and Software Baseline
 
-<p align = "justify"> Few examples from source were implemented using Renode Simulation and these could help to get started with the framework. The files are available at (./proj/example_renode). However, as renode is not cycle 
+<p align = "justify"> Few examples from source were implemented using Renode Simulation and these could help to get started with the framework. The files are available at: </p>
+
+[Renode Examples](./proj/example_renode)
+
+<p align = "justify"> However, as renode is not cycle 
 accurate, in practise, either Verilator is to be used or an actual FPGA.  A software baseline for an MNIST Neural Network was developed using the TFLite model and the same was profiled to identify the bottlenecks. It was further
-analysed to identify aspects for parallelism as well as the possibilities of input data re-use. The code is made available at (./proj/baseline). 
+analysed to identify aspects for parallelism as well as the possibilities of input data re-use. The code is made available at: </p>
+
+[Software Baseline](./proj/baseline) 
 
 #### CFU Hardware Accelerator 
 
 <p align = "justify"> The hardware accelerator was developed on the inferences drawn and same was optimised 
 iteratively including aspects like changing the cache structure, degree of data re-use, amount of parallelism, till significant peformance was obtained. The accelerator was placed and 
-rounted on a Nexys4 Artix-7 FPGA, and was succesfully tested. The code for the Hardware accelerator is available as (./proj/accel).  </p>
+rounted on a Nexys4 Artix-7 FPGA, and was succesfully tested. The code for the Hardware accelerator is available at: 
+
+[Accelerator](./proj/accel) </p>
 
 
 
