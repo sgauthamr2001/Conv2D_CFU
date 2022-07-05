@@ -1,0 +1,36 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue Jul  5 22:00:04 2022
+| Host         : gautham-Inspiron-5570 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_utilization -hierarchical -file digilent_nexys4ddr_utilization_hierarchical_place.rpt
+| Design       : digilent_nexys4ddr
+| Device       : 7a100tcsg324-1
+| Design State : Fully Placed
+--------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+|          Instance          |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+| digilent_nexys4ddr         |            (top) |       4655 |       4509 |     144 |    2 | 3770 |     11 |     25 |          4 |
+|   (digilent_nexys4ddr)     |            (top) |       1814 |       1668 |     144 |    2 | 1956 |     10 |     17 |          0 |
+|   Cfu                      |              Cfu |         59 |         59 |       0 |    0 |   70 |      0 |      0 |          0 |
+|     (Cfu)                  |              Cfu |          6 |          6 |       0 |    0 |   37 |      0 |      0 |          0 |
+|     fn0                    |              fn0 |         53 |         53 |       0 |    0 |   33 |      0 |      0 |          0 |
+|   VexRiscv                 |         VexRiscv |       2783 |       2783 |       0 |    0 | 1744 |      1 |      8 |          4 |
+|     (VexRiscv)             |         VexRiscv |       1229 |       1229 |       0 |    0 | 1580 |      0 |      2 |          4 |
+|     IBusCachedPlugin_cache | InstructionCache |        727 |        727 |       0 |    0 |   98 |      1 |      1 |          0 |
+|     dataCache_1            |        DataCache |        837 |        837 |       0 |    0 |   66 |      0 |      5 |          0 |
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
