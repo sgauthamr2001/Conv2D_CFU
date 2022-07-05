@@ -2,7 +2,9 @@
 
 ### Conv2D acceleration using CFU Playground framework, Mini-Project, Jan - May 2022
 
-This repository holds code/experiments for the project Conv2D Acceleration using the framework CFU Playground. This is a forked repository of [CFU-Playground](https://github.com/google/CFU-Playground). 
+<p align = "justify">  This repository holds code/experiments for the project Conv2D Acceleration using the framework CFU Playground. This is a forked repository of: </p>
+
+[CFU-Playground](https://github.com/google/CFU-Playground)
 
 #### Brief Description
 
