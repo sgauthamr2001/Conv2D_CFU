@@ -15,6 +15,12 @@ the storage and network bottlenecks that might arise when designed in isolation,
 The accelerator called the CFU (Custom Function Units) are invoked from the TFlite kernels using macros, and since a given Kernel could be re-used for 
 multiple Networks, this offers more flexibility in terms of hardware. </p>
 
+#### Setting up the environment 
+
+<p align = "justify"> The documentation of the framework provides clear guidelines to setup the environment. Most of the dependencies are open-source. Only proprietary toolchain that would be needed is Xilinx Vivado. The following link guides the user on building the environment: </p>
+
+[Setup Guide](https://cfu-playground.readthedocs.io/en/latest/setup-guide.html)
+
 #### Getting Started and Software Baseline
 
 <p align = "justify"> Few examples from source were implemented using Renode Simulation and these could help to get started with the framework. The files are available at: </p>
@@ -34,6 +40,8 @@ iteratively including aspects like changing the cache structure, degree of data 
 rounted on a Nexys4 Artix-7 FPGA, and was succesfully tested. The code for the Hardware accelerator is available at: 
 
 [Accelerator](./proj/accel) </p>
+
+
 
 
 
