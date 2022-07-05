@@ -1,32 +1,22 @@
-# MNIST Neural Network
-The implementation of a int8 quantised custom MNIST model with following architecture: 
-- Conv2D + ReLU, 3x3 Kernel, 12 Out_channels
-- Conv2D + ReLU, 3x3 Kernel, 12 Out_channels
-- MaxPool2D
-- Flatten + FC Layer
+# Renode Examples 
 
-Optimisations have been performed using template SIMD unit provided, following are cycle counts, 
-on renode emulation (each Tick is 1024 cycles): 
+<p align="justify"> The framework offers renode simulation which is typically faster than Verilator for the purpose of functional verification. The current repository has been implemented to test out the efficiency of renode in comparision to that of verilator. An MNIST Neural Network software stack was implemented in the common sub-repository of main repository. To test out the software stack, a set of examples for optimisation have been implemented in renode following the tutorial provided in the documentation. The tutorial is available as the following location : </p>
 
-- Without any optimisations:
-    - Conv2D (1) - 3322 Ticks 
-    - Conv2D (2) - 10215 Ticks 
-    - Total - 14M cycles 
-- Common Constants replaced:
-    - Conv2D (1) - 2390 Ticks 
-    - Conv2D (2) - 7411 Ticks 
-    - Total - 10M cycles 
-- After in_channel loop unrolled:   
-    - Conv2D (1) - 1630 Ticks 
-    - Conv2D (2) - 5575 Ticks 
-    - Total - 7677K cycles 
-- After CFU SIMD Hardware (Only MAC for Conv2D (1)):
-    - Conv2D (1) - 1530 Ticks 
-    - Conv2D (2) - 1602 Ticks 
-    - Total - 3506K cycles
-- After model specific constants replaced:
-    - Conv2D (1) - 1477 Ticks 
-    - Conv2D (2) - 1490 Ticks 
-    - Total - 3337K cycles
-    
-Thus, there is a significant reduction in number of cycles. 
+[Step-by-Step guide to build an ML accelerator](https://cfu-playground.readthedocs.io/en/latest/step-by-step.html)
+
+<p align="justify">  The TFLite kernel could be modified to perform several different optimisations like unrolling, SIMD accumulation, constant replacement etc., and to run the inference using renode, following command could be used: </p> 
+
+```
+make renode
+```
+<p align="justify">  Further, to run the same inference using verilator, the following command is to be used: </p> 
+
+```
+make PLATFORM=sim load
+```
+<p align="justify"> Adding the following extra argument to both verilator or renode shall generate the waveform traces which could be visualised using open-source tools like gtkwave. </p> 
+
+```
+ENABLE_TRACE_ARG=--trace-fst
+```
+<p align="justify"> On comparing both the waveforms generated using verilator and renode, it could be inferred that renode does not simulate the junk data which is fed to the CFU between succesive calls, thus not only gives a reduced cycle count, but also leads to errors if this junk is not handled appropriately. </p>
