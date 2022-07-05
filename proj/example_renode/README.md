@@ -4,7 +4,7 @@
 
 [Step-by-Step guide to build an ML accelerator](https://cfu-playground.readthedocs.io/en/latest/step-by-step.html)
 
-<p align="justify">  The TFLite kernel found in the src repository could be modified to perform several different optimisations like unrolling, SIMD accumulation, constant replacement etc., and to run the inference using renode, following command could be used: </p> 
+<p align="justify">  The TFLite kernels found in the src repository could be modified to perform several different optimisations like unrolling, SIMD accumulation, constant replacement etc., and to run the inference using renode, following command could be used: </p> 
 
 ```
 make renode
