@@ -19,9 +19,3 @@ Post this, to perform the inference, the following command is used to test with 
 make load PLATFORM=digilent_nexys4ddr
 ```
 
-<p align="justify">  Further, to run the same inference using verilator, the following command can be used: </p> 
-
-```
-make PLATFORM=sim load
-```
-
