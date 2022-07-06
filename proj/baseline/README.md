@@ -1,7 +1,7 @@
 
 # Baseline codes
 
-<p align="justify"> The baseline TFLite kernels were taken directly from the TFLite source, post which they have been instrumented to obtain the cycle counts of specific parts of the code. To do the same performance library is to be included in the C code. The CPU for the baseline is perf+cfu and the configuration of the same is available in the soc directory of the root. The synthesised design and all the Vivado reports are avaible in the build sub-directory of soc directory. The software has been unrolled to reduce the branch overheads, as well as gain from better spatiality of cache and kernel for the same is also available at: </p>
+<p align="justify"> The baseline TFLite kernels were taken directly from the TFLite source, post which they have been instrumented to obtain the cycle counts of specific parts of the code. To do the same performance library is to be included in the C code. The CPU for the baseline is perf+cfu which has the provision of performance counters and the configuration of the same is available in the soc directory of the root. The synthesised design and all the Vivado reports are avaible in the build sub-directory of soc directory. The software has been unrolled to reduce the branch overheads, as well as gain from better spatiality of cache and kernel for the same is also available at: </p>
 
 [Source TFLite Codes](./src/tensorflow)
 
